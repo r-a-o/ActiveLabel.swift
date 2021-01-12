@@ -164,7 +164,7 @@ typealias ElementTuple = (range: NSRange, element: ActiveElement, type: ActiveTy
     }
     
     open override func drawText(in rect: CGRect) {
-        let range = NSRange(location: 0, length: textStorage.length)
+        let range = NSRange(location: 0, length: textStorage.length) // + Int(50.0)
         
         textContainer.size = rect.size
         let newOrigin = textOrigin(inRect: rect)
